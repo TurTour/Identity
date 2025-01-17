@@ -5,10 +5,6 @@ Function Get-DsRegCmd{
 
 $device = Get-DsRegCmd
 
-#$EntraDeviceID = (Get-DsRegCmd).DeviceId
-#Connect-MgGraph -NoWelcome
-#$deviceObjectId = Get-MgDevice -Filter "deviceId eq '$EntraDeviceID'"
-
 Write-host "DeviceName: $($device.DeviceName)"
 Write-host "DeviceID: $($device.DeviceId)"
 Write-host "DomainJoined: $($device.DomainJoined)"
